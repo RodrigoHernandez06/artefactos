@@ -7,10 +7,7 @@
  *   OUT -> GPIO 27
  *
  * El FC-51 normalmente da LOW cuando detecta un obstáculo
- * y HIGH cuando no hay nada. Ajusta el potenciómetro para el alcance.
- *
- * Nota: si usas un RECEPTOR IR de control remoto (VS1838B / TSOP),
- * usa la librería "IRremote" o "IRremoteESP8266" en lugar de este código.
+ * y HIGH cuando no hay nada. Ajusta el potenciómetro para el alcance
  */
 
 #define IR_PIN  27
