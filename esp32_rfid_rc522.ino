@@ -22,7 +22,7 @@
 
 MFRC522 rfid(SS_PIN, RST_PIN);
 
-// UID autorizado (cámbialo por el de tu tarjeta; léelo primero por el monitor serie)
+// UID autorizado (cambiar por el de la tarjeta)
 byte uidAutorizado[] = {0xDE, 0xAD, 0xBE, 0xEF};
 
 bool uidCoincide() {
@@ -63,6 +63,6 @@ void loop() {
     Serial.println("Acceso DENEGADO");
   }
 
-  rfid.PICC_HaltA();        // Detener lectura de la tarjeta
+  rfid.PICC_HaltA();        
   rfid.PCD_StopCrypto1();
 }
