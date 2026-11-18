@@ -6,9 +6,6 @@
  *   Señal (naranja/amarillo) -> GPIO 18
  *   VCC (rojo)               -> 5V (idealmente fuente externa de 5V)
  *   GND (marrón/negro)       -> GND (común con el ESP32)
- *
- * IMPORTANTE: si el servo hace temblar o reiniciar el ESP32,
- * aliméntalo con una fuente externa de 5V y une las tierras (GND).
  */
 
 #include <ESP32Servo.h>
